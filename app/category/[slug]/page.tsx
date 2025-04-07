@@ -18,6 +18,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
+interface CategoryProps {
+  params: { slug: string; };
+}
+
 // This would typically come from a CMS or API
 const categories = {
   "linux-os": {
@@ -173,8 +177,9 @@ const categories = {
   // Add more categories as needed
 }
 
-export default function CategoryPage({ params }: { params: { slug: string } }) {
+export default function CategoryPage({ params }: CategoryProps) {
   const category = categories[params.slug as keyof typeof categories]
+
 
   if (!category) {
     notFound()
