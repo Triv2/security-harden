@@ -401,7 +401,7 @@ ufw status verbose`)
                               Set-MpPreference -EnableControlledFolderAccess Enabled # Enable behavior monitoring
                               Set-MpPreference -DisableBehaviorMonitoring $false # Enable exploit protection
                               Set-ProcessMitigation -PolicyFilePath
-                              "C:\Windows\Security\ExploitGuard\ProcessMitigation.xml"
+                              &quot;C:\Windows\Security\ExploitGuard\ProcessMitigation.xml&quot;
                             </code>
                           </pre>
                           <Button
@@ -442,11 +442,11 @@ Set-ProcessMitigation -PolicyFilePath "C:\\Windows\\Security\\ExploitGuard\\Proc
                           <pre className="bg-muted p-4 rounded-lg overflow-x-auto text-sm">
                             <code>
                               # Configure password policy via PowerShell # Set minimum password length to 14 characters
-                              secedit /export /cfg C:\secpol.cfg (gc C:\secpol.cfg).replace("MinimumPasswordLength = 0",
-                              "MinimumPasswordLength = 14") | Out-File C:\secpol.cfg secedit /configure /db
+                              secedit /export /cfg C:\secpol.cfg (gc C:\secpol.cfg).replace(&quot;MinimumPasswordLength = 0&quot;,
+                              &quot;MinimumPasswordLength = 14&quot;) | Out-File C:\secpol.cfg secedit /configure /db
                               C:\Windows\security\local.sdb /cfg C:\secpol.cfg /areas SECURITYPOLICY # Set password
                               complexity requirements secedit /export /cfg C:\secpol.cfg (gc
-                              C:\secpol.cfg).replace("PasswordComplexity = 0", "PasswordComplexity = 1") | Out-File
+                              C:\secpol.cfg).replace(&quot;PasswordComplexity = 0&quot;, &quot;PasswordComplexity = 1&quot;) | Out-File
                               C:\secpol.cfg secedit /configure /db C:\Windows\security\local.sdb /cfg C:\secpol.cfg
                               /areas SECURITYPOLICY # Set account lockout threshold net accounts /lockoutthreshold:5
                               /lockoutduration:30 /lockoutwindow:30

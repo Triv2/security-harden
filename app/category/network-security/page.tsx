@@ -415,7 +415,7 @@ export default function NetworkSecurityPage() {
                     <Zap className="h-4 w-4" />
                     <AlertTitle>Defense in Depth</AlertTitle>
                     <AlertDescription>
-                      Network security should be implemented in layers. Don't rely on a single security control to
+                      Network security should be implemented in layers. Don&apos;t rely on a single security control to
                       protect your entire network. Combine multiple technologies and approaches for comprehensive
                       protection.
                     </AlertDescription>

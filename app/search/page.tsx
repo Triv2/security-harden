@@ -415,6 +415,3 @@ export default function SearchPage() {
     </div>
   )
 }
-\
-Let's also add more Auditing & Monitoring-specific tools to the tools page:
-

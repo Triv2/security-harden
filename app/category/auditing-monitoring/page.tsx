@@ -522,7 +522,7 @@ export default function AuditingMonitoringPage() {
                     <Shield className="h-4 w-4" />
                     <AlertTitle>Visibility is Key</AlertTitle>
                     <AlertDescription>
-                      You can't protect what you can't see. Comprehensive auditing and monitoring provide the visibility
+                      You can&apos;t protect what you can&apos;t see. Comprehensive auditing and monitoring provide the visibility
                       needed to detect threats, investigate incidents, and maintain compliance with security
                       requirements.
                     </AlertDescription>
