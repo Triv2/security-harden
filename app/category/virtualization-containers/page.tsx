@@ -264,14 +264,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build image\
-      run: docker build -t myapp:${{ github.sha }} .
+      run: docker build -t myapp:{{ github.sha }} .
     - name: Scan image
       uses: aquasecurity/trivy-action@master
       with:
-        image-ref: myapp:${{ github.sha }}
+        image-ref: myapp:{{ github.sha }}
         format: 'table'
         exit-code: '1'
-        severity: 'CRITICAL,HIGH'ge-ref: myapp:${{ github.sha }}
+        severity: 'CRITICAL,HIGH'ge-ref: myapp:{{ github.sha }}
         format: 'table'
         exit-code: '1'
         severity: 'CRITICAL,HIGH'`,

@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import tailwindcssAnimate from "tailwindcss-animate"
 
 const config = {
   darkMode: ["class"],
@@ -16,6 +17,9 @@ const config = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+        "sm": '640px',
+        "md": '768px',
+        "lg": '1024px',
       },
     },
     extend: {
@@ -53,6 +57,20 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        code: {
+          DEFAULT: "hsl(var(--code))",
+          foreground: "hsl(var(--code-foreground))",
+        },
+        "code-block": {
+          DEFAULT: "hsl(var(--code-block))",
+          foreground: "hsl(var(--code-block-foreground))",
+        },
+        heading: {
+          DEFAULT: "hsl(var(--heading))",
+        },
+        "section-divider": {
+          DEFAULT: "hsl(var(--section-divider))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -75,7 +93,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 } satisfies Config
 
 export default config
