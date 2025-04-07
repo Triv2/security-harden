@@ -666,7 +666,7 @@ export default function ToolsPage() {
         <p className="mb-4">Know a great security hardening tool that should be included here? Let us know!</p>
         <Button>
           <Link
-            href="https://github.com/yourusername/security-hardening-tool/issues/new"
+            href="https://github.com/Triv2/security-harden/issues/new"
             target="_blank"
             rel="noopener noreferrer"
           >
