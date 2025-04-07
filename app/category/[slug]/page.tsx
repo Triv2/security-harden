@@ -19,7 +19,9 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 interface PageProps {
-  params: { slug: string; };
+  params: { 
+    slug: string; 
+  };
 }
 
 // This would typically come from a CMS or API
