@@ -1,4 +1,4 @@
-"use client"
+
 
 import Link from "next/link"
 import { notFound } from "next/navigation"
@@ -18,11 +18,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-interface PageProps {
-  params: { 
-    slug: string; 
-  };
-}
+
 
 // This would typically come from a CMS or API
 const categories = {
@@ -179,8 +175,13 @@ const categories = {
   // Add more categories as needed
 }
 
-export default function CategoryPage({ params }: PageProps) {
-  const category = categories[params.slug as keyof typeof categories]
+export default async function CategoryPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const {slug } = await params;
+  const category = categories[slug as keyof typeof categories]
 
 
   if (!category) {
@@ -394,7 +395,7 @@ ufw status verbose`)
                       </Button>
                     </div>
                   </div>
-                  {params.slug === "windows-os" && (
+                  {slug === "windows-os" && (
                     <>
                       <div>
                         <h3 className="text-lg font-medium mb-2">Windows Defender Configuration</h3>
