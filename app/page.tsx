@@ -79,7 +79,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-                  Don&apos;t be soft, Get Hard
+                  Don&apos;t be soft. Get Hard
                 </h1>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
                   A comprehensive guide to getting your systems hard.
@@ -101,7 +101,7 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Security Hardening</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl ">Security Hardening</h2>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
                   Security hardening is the process of reducing vulnerabilities by configuring systems with security
                   controls, minimizing attack surfaces, and eliminating potential pathways for attackers. This
