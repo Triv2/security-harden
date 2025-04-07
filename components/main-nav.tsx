@@ -18,22 +18,22 @@ export function MainNav() {
         <Link href="/category/cloud-security" className="flex items-center text-sm font-medium text-muted-foreground">
           Cloud
         </Link>
-        <Link href="/category/cloud-security" className="flex items-center text-sm font-medium text-muted-foreground">
+        <Link href="/category/networking-architecture" className="flex items-center text-sm font-medium text-muted-foreground">
           Net Arch
         </Link>
-        <Link href="/category/network-devices" className="flex items-center text-sm font-medium text-muted-foreground">
+        {/* <Link href="/category/network-devices" className="flex items-center text-sm font-medium text-muted-foreground">
           Net Device
-        </Link>
+        </Link> */}
         <Link href="/category/network-security" className="flex items-center text-sm font-medium text-muted-foreground">
           Net Sec
         </Link>
-        <Link href="/category/cloud-security" className="flex items-center text-sm font-medium text-muted-foreground">
+        <Link href="/category/active-directory" className="flex items-center text-sm font-medium text-muted-foreground">
           Active Dir
         </Link>
-        <Link href="/category/cloud-security" className="flex items-center text-sm font-medium text-muted-foreground">
+        <Link href="/category/virtualization-containers" className="flex items-center text-sm font-medium text-muted-foreground">
           VM + Containers
         </Link>
-        <Link href="/category/cloud-security" className="flex items-center text-sm font-medium text-muted-foreground">
+        <Link href="/category/auditing-monitoring" className="flex items-center text-sm font-medium text-muted-foreground">
           Monitoring
         </Link>
       </nav>

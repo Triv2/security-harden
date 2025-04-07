@@ -39,12 +39,12 @@ export default function Home() {
       icon: Users,
       slug: "active-directory",
     },
-    {
-      title: "Network Devices",
-      description: "Secure routers, switches, and other network equipment.",
-      icon: Server,
-      slug: "network-devices",
-    },
+    // {
+    //   title: "Network Devices",
+    //   description: "Secure routers, switches, and other network equipment.",
+    //   icon: Server,
+    //   slug: "network-devices",
+    // },
     {
       title: "Network Security",
       description: "Implement firewalls, IDS/IPS, and other security controls.",
