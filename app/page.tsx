@@ -79,10 +79,10 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-                  Getting Hard Systems Starts Here
+                  Don&apos;t be soft, Get Hard
                 </h1>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  A comprehensive guide to hardening your systems against security threats.
+                  A comprehensive guide to getting your systems hard.
                 </p>
               </div>
               <div className="space-x-4">
