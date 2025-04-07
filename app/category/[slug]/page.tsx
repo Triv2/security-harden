@@ -18,7 +18,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-interface CategoryProps {
+interface PageProps {
   params: { slug: string; };
 }
 
@@ -177,7 +177,7 @@ const categories = {
   // Add more categories as needed
 }
 
-export default function CategoryPage({ params }: CategoryProps) {
+export default function CategoryPage({ params }: PageProps) {
   const category = categories[params.slug as keyof typeof categories]
 
 
